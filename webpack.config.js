@@ -61,7 +61,7 @@ module.exports = {
       chunks: "all",
       cacheGroups: {
         shared: {
-          test: /[\\/]yourDistFolder[\\/]shared[\\/]/,
+          test: /[\\/]yourEntryPointFolder[\\/]shared[\\/]/,
           minSize: 0
         },
         vendors: {
