@@ -53,7 +53,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "[name]/[name].css"
     }),
-    new CleanWebpackPlugin(path.resolve(__dirname, "js-asset-builds"), {}),
+    new CleanWebpackPlugin(path.resolve(__dirname, "yourDistFolder"), {}),
     new BundleAnalyzerPlugin()
   ],
   optimization: {
@@ -61,7 +61,7 @@ module.exports = {
       chunks: "all",
       cacheGroups: {
         shared: {
-          test: /[\\/]js-components[\\/]shared[\\/]/,
+          test: /[\\/]yourDistFolder[\\/]shared[\\/]/,
           minSize: 0
         },
         vendors: {
