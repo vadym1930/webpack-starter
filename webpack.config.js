@@ -8,11 +8,11 @@ const CleanWebpackPlugin = require("clean-webpack-plugin");
 
 module.exports = {
   entry: {
-    entryPointName: path.resolve(__dirname, "./entryPointNamePath"),
+    yourEntryPointName: path.resolve(__dirname, "./yourEntryPointNamePath"),
   },
   output: {
-    path: path.resolve(__dirname, "distFolder"),
-    publicPath: "/publicPath/distFolder/",
+    path: path.resolve(__dirname, "yourDistFolder"),
+    publicPath: "/yourPublicPath/yourDistFolder/",
     chunkFilename: "[name].js",
     filename: "[name]/[name].js"
   },
@@ -50,7 +50,6 @@ module.exports = {
     ]
   },
   plugins: [
-    // new webpack.HashedModuleIdsPlugin(), // so that file hashes don't change unexpectedly
     new MiniCssExtractPlugin({
       filename: "[name]/[name].css"
     }),
